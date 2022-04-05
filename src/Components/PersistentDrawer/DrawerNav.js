@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
     Route,
     Switch,
-    Link,
     useHistory
   } from "react-router-dom";
 import { useTheme } from '@mui/material/styles';
@@ -36,7 +35,7 @@ export default function DrawerNav() {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
     const routes=["/","/dashboard",'/about'];
-    const icons=[InboxIcon,MailIcon]
+
   
     const handleDrawerOpen = () => {
       setOpen(true);
